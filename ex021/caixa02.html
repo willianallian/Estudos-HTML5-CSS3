@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        article > aside{
+            background-color: lightgrey;
+            padding: 5px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        nav{
+            background-color: rgba(213, 214, 199, 0.952);
+            padding: 5px;
+            box-shadow: 6px 5px 10px black;/*fazendo sobras*/
+        }
+        nav > a {
+            text-decoration: none;
+            color: rgb(3, 3, 3);
+            font-weight: bold;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assunto">
+            <h1>
+                Titulo
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit vero, excepturi id quis voluptate deserunt reiciendis, quo optio, suscipit praesentium aspernatur quisquam! Perferendis porro aperiam velit similique nemo sunt ab.
+            </p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste, tempora, asperiores nulla voluptatibus expedita dolore odit atque laudantium quidem sit, fuga molestiae adipisci recusandae exercitationem obcaecati similique inventore officiis aliquam.
+                </p>
+                <aside>Artigo escrito por ....</aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por ...</p>
+    </footer>
+</body>
+</html>
